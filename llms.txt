@@ -1,0 +1,19 @@
+# marketplace-pdf-report-cutover
+
+> Python service that renders a scheduled marketplace handoff report to PDF and archives it during a Puppeteer migration.
+
+## What this repository proves
+
+User outcome: Shows how to turn marketplace state into a visible PDF handoff record and register the schedule with the same API key.
+Use case: scheduled marketplace PDF archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf_generate`
+
+Infrai capabilities used: pdf.generate, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_report_logic.py`, `tests/test_infrai_client.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,68 @@
+{
+  "report_id": "rpt-2026-04-15-am",
+  "marketplace_name": "Northwind Market",
+  "period_label": "2026-04-15 00:00 to 06:00 UTC",
+  "seller_assets": [
+    {
+      "sku": "SKU-RED-SHOE-42",
+      "title": "Red Runner 42",
+      "quantity_available": 4,
+      "ready_to_ship": true
+    },
+    {
+      "sku": "SKU-BLUE-HAT",
+      "title": "Blue Hat",
+      "quantity_available": 8,
+      "ready_to_ship": false
+    },
+    {
+      "sku": "SKU-GREEN-BAG",
+      "title": "Green Bag",
+      "quantity_available": 0,
+      "ready_to_ship": true
+    }
+  ],
+  "buyer_updates": [
+    {
+      "order_id": "ORD-1001",
+      "buyer_name": "Mina Lopez",
+      "address_confirmed": true,
+      "fraud_review": "clear",
+      "note": "leave at front desk"
+    },
+    {
+      "order_id": "ORD-1002",
+      "buyer_name": "Ravi Shah",
+      "address_confirmed": true,
+      "fraud_review": "clear",
+      "note": "gift wrap"
+    },
+    {
+      "order_id": "ORD-1003",
+      "buyer_name": "Tara Nguyen",
+      "address_confirmed": true,
+      "fraud_review": "clear",
+      "note": "customer requested fast dispatch"
+    }
+  ],
+  "order_handoffs": [
+    {
+      "order_id": "ORD-1001",
+      "sku": "SKU-RED-SHOE-42",
+      "quantity": 1,
+      "carrier": "DHL"
+    },
+    {
+      "order_id": "ORD-1002",
+      "sku": "SKU-BLUE-HAT",
+      "quantity": 1,
+      "carrier": "UPS"
+    },
+    {
+      "order_id": "ORD-1003",
+      "sku": "SKU-GREEN-BAG",
+      "quantity": 1,
+      "carrier": "FedEx"
+    }
+  ]
+}
